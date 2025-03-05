@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Ordering App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Section: Pizza Menu -->
+        <div class="menu-container">
+            <h1>🍕 Order Your Favorite Pizza</h1>
+            <div class="menu">
+                <div class="item">
+                    <img src="images/margherita.jpg" alt="Margherita Pizza">
+                    <h2>Margherita</h2>
+                    <p>₹100</p>
+                    <button onclick="addToCart('Margherita', 100)">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="images/pepperoni.jpg" alt="Pepperoni Pizza">
+                    <h2>Pepperoni</h2>
+                    <p>₹220</p>
+                    <button onclick="addToCart('Pepperoni', 220)">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="images/bbq-chicken.jpg" alt="BBQ Chicken Pizza">
+                    <h2>BBQ Chicken</h2>
+                    <p>₹350</p>
+                    <button onclick="addToCart('BBQ Chicken', 350)">Add to Cart</button>
+                </div>
+                
+                <div class="item">
+                    <img src="images/veggie-delight.jpg" alt="Veggie Delight Pizza">
+                    <h2>Veggie Delight</h2>
+                    <p>₹220</p>
+                    <button onclick="addToCart('Veggie Delight', 220)">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="images/meat-lovers.jpg" alt="Meat Lovers Pizza">
+                    <h2>Meat Lovers</h2>
+                    <p>₹260</p>
+                    <button onclick="addToCart('Meat Lovers', 260)">Add to Cart</button>
+                </div>
+                
+                
+                <div class="item">
+                    <img src="images/supreme.jpg" alt="Supreme Pizza">
+                    <h2>Supreme</h2>
+                    <p>₹380</p>
+                    <button onclick="addToCart('Supreme', 380)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section: Cart -->
+        <div class="cart-container">
+            <h2>🛒 Your Cart</h2>
+            <ul id="cart"></ul>
+            <h3>Total: ₹<span id="total">0</span></h3>
+            <button class="checkout" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
